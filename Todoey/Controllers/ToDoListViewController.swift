@@ -117,10 +117,10 @@ class ToDoListViewController: UITableViewController{
 
     }
     
-    func removeItem(_ index : Int){
-        context.delete(itemArray[index])
-        itemArray.remove(at: index)
-    }
+//    func removeItem(_ index : Int){
+//        context.delete(itemArray[index])
+//        itemArray.remove(at: index)
+//    }
 }
 
 //MARK: - Search Bar Methods
