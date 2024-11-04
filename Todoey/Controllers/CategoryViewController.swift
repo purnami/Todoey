@@ -18,7 +18,7 @@ class CategoryViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loadICategories()
+        loadCategories()
     }
     
     //MARK: - TableView Datasource Methods
@@ -83,13 +83,13 @@ class CategoryViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    func loadICategories(with request : NSFetchRequest<Category> = Category.fetchRequest()){
-        do {
-            categoryArray = try context.fetch(request)
-        } catch {
-            print("Error fetching data from context \(error)")
-        }
-        
-        tableView.reloadData()
+    func loadCategories(with request : NSFetchRequest<Category> = Category.fetchRequest()){
+//        do {
+//            categoryArray = try context.fetch(request)
+//        } catch {
+//            print("Error fetching data from context \(error)")
+//        }
+//        
+//        tableView.reloadData()
     }
 }
